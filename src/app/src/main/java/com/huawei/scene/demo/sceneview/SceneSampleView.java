@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.huawei.scene.demo;
+package com.huawei.scene.demo.sceneview;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -30,13 +30,13 @@ import com.huawei.hms.scene.sdk.SceneView;
  * @author HUAWEI
  * @since 2020-5-13
  */
-public class SampleView extends SceneView {
+public class SceneSampleView extends SceneView {
     /**
      * Constructor - used in new mode.
      *
      * @param context Context of activity.
      */
-    public SampleView(Context context) {
+    public SceneSampleView(Context context) {
         super(context);
     }
 
@@ -46,7 +46,7 @@ public class SampleView extends SceneView {
      * @param context Context of activity.
      * @param attributeSet XML attribute set.
      */
-    public SampleView(Context context, AttributeSet attributeSet) {
+    public SceneSampleView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
     }
 
@@ -63,16 +63,16 @@ public class SampleView extends SceneView {
         super.surfaceCreated(holder);
 
         // Loads the model of a scene by reading files from assets.
-        loadScene("scene.gltf");
+        loadScene("SceneView/scene.gltf");
 
         // Loads skybox materials by reading files from assets.
-        loadSkyBox("skyboxTexture.dds");
+        loadSkyBox("SceneView/skyboxTexture.dds");
 
         // Loads specular maps by reading files from assets.
-        loadSpecularEnvTexture("specularEnvTexture.dds");
+        loadSpecularEnvTexture("SceneView/specularEnvTexture.dds");
 
         // Loads diffuse maps by reading files from assets.
-        loadDiffuseEnvTexture("diffuseEnvTexture.dds");
+        loadDiffuseEnvTexture("SceneView/diffuseEnvTexture.dds");
     }
 
     /**

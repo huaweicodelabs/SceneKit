@@ -14,18 +14,19 @@
  * limitations under the License.
  */
 
-package com.huawei.scene.demo;
+package com.huawei.scene.demo.sceneview;
 
 import android.app.Activity;
 import android.os.Bundle;
+import com.huawei.scene.demo.R;
 
 /**
- * SampleActivity
+ * SceneViewActivity
  *
  * @author HUAWEI
  * @since 2020-5-13
  */
-public class SampleActivity extends Activity {
+public class SceneViewActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
